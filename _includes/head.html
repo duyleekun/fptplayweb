@@ -3,29 +3,30 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
-  <link href="vendor/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="http://fptplay.tv/html/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
   <!-- CSS -->
-  <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://fptplay.tv/html/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="vendor/plugins/carousel-evolution/style/carousel8e5e.css?v=15">
-  <link rel="stylesheet" href="vendor/plugins/tooltipster-master/css/tooltipster.css">
+  <link rel="stylesheet" href="http://fptplay.tv/html/plugins/carousel-evolution/style/carousel.css?v=15">
+  <link rel="stylesheet" href="http://fptplay.tv/html/plugins/tooltipster-master/css/tooltipster.css">
 
-  <link rel="stylesheet" href="vendor/css/fptplay-tv8e5e.css?v=15">
+  <link rel="stylesheet" href="http://fptplay.tv/html-v2/css/fptplay-tv.css?v=15">
+
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
-  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
-  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-  <![endif]-->
-  <script src="vendor/js/jquery-1.12.0.min.js"></script>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  <script src="http://fptplay.tv/html/js/jquery-1.12.0.min.js"></script>
 
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
-  <!--Start of Tawk.to Script-->
+
+    <!--Start of Tawk.to Script-->
   <script type="text/javascript">
     var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
     (function(){

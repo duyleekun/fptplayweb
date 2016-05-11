@@ -18,3 +18,12 @@ url: "http://fptplaybox.net" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
+navigation:
+- text: Trang Chủ
+  url: /
+- text: Cài Đặt
+  url: /box.html
+- text: Hỗ Trợ
+  url: /support.html
+- text: Mua Ngay
+  url: /order.html
