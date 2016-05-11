@@ -1,0 +1,20 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: FPT Play Box - Hộp giải trí gia đình
+email: contact@myphamnaotot.com
+description: > # this means to ignore newlines until "baseurl:"
+  Mua hộp truyền hình FPT PLay(android tv box) để xem tivi online
+  truyền hình trực tuyến gồm thời sự, tin tức, thể thao, bóng đá...và những bộ phim Âu, Á, Mỹ, Hàn hay nhất.
+  Ngoài ra với chất lượng âm thanh dolby 5.0 cho bạn cảm giác trải nghiệm tuyệt vời hơn khi nghe nhacso trên hộp truyền hình FPT PLay.
+  Click ngay để đặt hàng.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://fptplaybox.net" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
