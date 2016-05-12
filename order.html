@@ -4,119 +4,122 @@ title: Đặt Hàng
 ---
 
 <div class="wrapper">
-<div class="order">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-6 col-sm-offset-3">
-        <div class="order-left">
-          <img src="http://fptplay.tv/html-v2/images/remote-box-sm.png" alt="">
-          <div class="order-price">
-            <h3 class="hidden-xs hidden-sm"><span class="color">FPT PLAY</span> Box | hộp giải trí gia đình</h3>
-            <h3 class="visible-xs visible-sm"><span class="color">FPT PLAY</span> Box<br>hộp giải trí gia đình</h3>
-          </div>
-          <div class="order-price-text">
+    <div class="order">
+        <div class="container">
             <div class="row">
-              <div class="col-xs-6">
-                <div class="text-left">giá bán lẻ</div>
-              </div>
-              <div class="col-xs-6">
-                <div class="text-right">
-                  <span class="cost-old">2.400.000 vnđ</span>
+                <div class="col-sm-6 col-sm-offset-3">
+                    <div class="order-left">
+                        <img src="http://fptplay.tv/html-v2/images/remote-box-sm.png" alt="">
+                        <div class="order-price">
+                            <h3 class="hidden-xs hidden-sm"><span class="color">FPT PLAY</span> Box | hộp giải trí gia
+                                đình</h3>
+                            <h3 class="visible-xs visible-sm"><span class="color">FPT PLAY</span> Box<br>hộp giải trí
+                                gia đình</h3>
+                        </div>
+                        <div class="order-price-text">
+                            <div class="row">
+                                <div class="col-xs-6"<!---->>
+                                <div class="text-left">giá bán lẻ</div>
+                            </div>
+                            <div class="col-xs-6">
+                                <div class="text-right">
+                                    <span class="cost-old">2.400.000 vnđ</span>
+                                </div>
+                            </div>
+                            <div class="col-xs-6">
+                                <div class="text-left">
+                                    giá trực tuyến
+                                </div>
+                            </div>
+                            <div class="col-xs-6">
+                                <div class="text-right">
+                                    <span class="color">{{ site.price }}</span> vnđ
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-help">
+                        <p>Tư vấn bán hàng trực tiếp</p>
+                        <span>{{ site.phone }}</span>
+                    </div>
                 </div>
-              </div>
-              <div class="col-xs-6">
-                <div class="text-left">
-                  giá trực tuyến
-                </div>
-              </div>
-              <div class="col-xs-6">
-                <div class="text-right">
-                  <span class="color">{{ site.price }}</span> vnđ
-                </div>
-              </div>
             </div>
-          </div>
-          <div class="order-help">
-            <p>Tư vấn bán hàng trực tiếp</p>
-            <span>{{ site.phone }}</span>
-          </div>
+            <!-- <div class="col-sm-6">
+              <h3 class="order-title">đặt hàng trực tuyến</h3>
+              <form id="cart" method="post">
+                <div class="form-group" id="username_error">
+                  <label for="">Tên người nhận <span class="color">*</span></label>
+                  <input type="text" class="form-control" id="customer_name" name="customer_name" placeholder="">
+                  <label class="has-error" id="m_username_error"></label>
+
+                </div>
+                <div class="form-group" id="address_error">
+                  <label for="">Địa chỉ giao hàng <span class="color">*</span></label>
+                  <input type="text" class="form-control" id="address" name="address" placeholder="">
+                  <label class="has-error" id="m_address_error"></label>
+                </div>
+                <div class="form-group" >
+                  <div class="row">
+                      <div class="col-xs-6" id="phone_error">
+                          <label for="">Số điện thoại người nhận <span class="color">*</span></label>
+                          <input type="text" class="form-control" id="phone" name="phone" placeholder="">
+                          <label class="has-error" id="m_phone_error"></label>
+
+                      </div>
+                      <div class="col-xs-6" id="email_error">
+                          <label for="">Email <span class="color">*</span></label>
+                          <input type="text" class="form-control" id="email" name="email" placeholder="">
+                          <label class="has-error" id="m_email_error"></label>
+                      </div>
+                  </div>
+
+                </div>
+                <div class="form-group">
+                  <label for="">Mã giảm giá</label>
+                  <input type="text" class="form-control" id="coupon_code" name="coupon_code" placeholder="">
+                </div>
+                <div class="form-group">
+                  <div class="row">
+                      <div class="col-xs-6" id="phone_error">
+                          <label for="">Số lượng</label>
+                          <input type="text" value="1" class="form-control" id="number" name="number" placeholder="">
+
+                      </div>
+                      <div class="col-xs-6" id="email_error">
+                          <label for="">Thành tiền</label>
+                          <input type="text" style="color: red; font-size: 20px;" value="2,190,000 VNĐ" disabled class="form-control" id="sum_all" name="sum_all" placeholder="">
+                          <input type="hidden" value="2190000" value="" class="form-control" id="sum" name="sum" placeholder="">
+                          <input type="hidden" value="2190000" value="" class="form-control" id="price" name="price" placeholder="">
+                      </div>
+                  </div>
+
+
+                </div>
+                <div class="form-group form-group-lg">
+                  <label for="">Ghi chú</label>
+                  <textarea class="form-control" name="note" id="note" rows="3"></textarea>
+                </div>
+                <label class="has-error text-right" id="m_all_error"></label>
+                <div class="text-right">
+
+                <button type="submit" class="btn btn-buy btn-lg">mua ngay</button>
+                </div>
+              </form>
+            </div> -->
         </div>
-      </div>
-      <!-- <div class="col-sm-6">
-        <h3 class="order-title">đặt hàng trực tuyến</h3>
-        <form id="cart" method="post">
-          <div class="form-group" id="username_error">
-            <label for="">Tên người nhận <span class="color">*</span></label>
-            <input type="text" class="form-control" id="customer_name" name="customer_name" placeholder="">
-            <label class="has-error" id="m_username_error"></label>
-
-          </div>
-          <div class="form-group" id="address_error">
-            <label for="">Địa chỉ giao hàng <span class="color">*</span></label>
-            <input type="text" class="form-control" id="address" name="address" placeholder="">
-            <label class="has-error" id="m_address_error"></label>
-          </div>
-          <div class="form-group" >
-            <div class="row">
-                <div class="col-xs-6" id="phone_error">
-                    <label for="">Số điện thoại người nhận <span class="color">*</span></label>
-                    <input type="text" class="form-control" id="phone" name="phone" placeholder="">
-                    <label class="has-error" id="m_phone_error"></label>
-
-                </div>  
-                <div class="col-xs-6" id="email_error">
-                    <label for="">Email <span class="color">*</span></label>
-                    <input type="text" class="form-control" id="email" name="email" placeholder="">
-                    <label class="has-error" id="m_email_error"></label>
-                </div>
-            </div>
-            
-          </div>
-          <div class="form-group">
-            <label for="">Mã giảm giá</label>
-            <input type="text" class="form-control" id="coupon_code" name="coupon_code" placeholder="">
-          </div>
-          <div class="form-group">
-            <div class="row">
-                <div class="col-xs-6" id="phone_error">
-                    <label for="">Số lượng</label>
-                    <input type="text" value="1" class="form-control" id="number" name="number" placeholder="">
-
-                </div>  
-                <div class="col-xs-6" id="email_error">
-                    <label for="">Thành tiền</label>
-                    <input type="text" style="color: red; font-size: 20px;" value="2,190,000 VNĐ" disabled class="form-control" id="sum_all" name="sum_all" placeholder="">
-                    <input type="hidden" value="2190000" value="" class="form-control" id="sum" name="sum" placeholder="">
-                    <input type="hidden" value="2190000" value="" class="form-control" id="price" name="price" placeholder="">
-                </div>
-            </div>
-
-            
-          </div>
-          <div class="form-group form-group-lg">
-            <label for="">Ghi chú</label>
-            <textarea class="form-control" name="note" id="note" rows="3"></textarea>
-          </div>
-          <label class="has-error text-right" id="m_all_error"></label>
-          <div class="text-right">
-            
-          <button type="submit" class="btn btn-buy btn-lg">mua ngay</button>
-          </div>
-        </form>
-      </div> -->
     </div>
-  </div>
 </div>
 <div class="distribution" id="partner" style="padding: 0">
-  <div class="bgc">
-    <div class="container">
-      <p>Trở thành đối tác, đại lý phân phối sản phẩm FPT Play với mức chiết khấu hấp dẫn. Chi tiết vui lòng liên hệ {{ site.phone }}</p>
+    <div class="bgc">
+        <div class="container">
+            <p>Trở thành đối tác, đại lý phân phối sản phẩm FPT Play với mức chiết khấu hấp dẫn. Chi tiết vui lòng liên
+                hệ {{ site.phone }}</p>
+        </div>
     </div>
-  </div>
 </div>
 </div>
 <style type="text/css">
-label.has-error{
+    label.has-error {
         color: #a94442;
-}
+    }
 </style>
