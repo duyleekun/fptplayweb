@@ -17,8 +17,8 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://fptplaybox.net" # the base hostname & protocol for your site
 
 price: 2.190.000
-phone: 093 207 6118
-email: trang.van@fptplaybox.net
+phone: 08 6274 7274
+email: sales@fptplaybox.net
 
 # Build settings
 markdown: kramdown
